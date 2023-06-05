@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: HEADER;
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: #37384E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #FFF;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-family: HEADER;
+    font-size: 44px;
+}
+
+p {
+    font-family: Regular;
+    font-size: 14px;
+}
+
+span {
+    font-family: HEADER;
+}
+
+button {
+    background-color: #232742;
+    color: #FFF;
+    display: block;
+    width: 100%;
+    font-family: HEADER;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: rgb(255,83,120);
+    background: linear-gradient(90deg, rgba(255,83,120,1) 0%, rgba(212,63,54,1) 57%, rgba(255,104,66,1) 100%);
+}
+
+@media (min-width: 440px) {
+    main {
+        width: 320px;
+        max-width: 320px;
+        padding: 40px;
+    }
+    
+    div {
+        margin: 15px 0;
+    }
+    
+    .containerButton {
+        width: 300px;
+    }
+}
+
+@media (max-width: 440px) {
+    main {
+        width: 350px;
+        max-width: 320px;
+        padding: 30px;
+    }
+
+    div {
+        margin: 10px 0;
+    }
+
+    .containerButton {
+        width: 265px;
+        margin: 10px auto;
+    }
+}

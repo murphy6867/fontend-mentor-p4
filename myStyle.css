@@ -8,8 +8,24 @@
     src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 body {
     font-family: Regular;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 90vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ._header {
@@ -38,8 +54,52 @@ input[type="email"] {
     font-size: 16px;
 }
 
+.submit:hover {
+    background: rgb(255,83,120);
+    background: linear-gradient(90deg, rgba(255,83,120,1) 0%, rgba(212,63,54,1) 57%, rgba(255,104,66,1) 100%);
+}
+
+.emailChecking {
+    font-family: Header;
+    font-size: 13px;
+    display: block;
+    color: #E3635B;
+}
+
+/* Desktop viewport */
+@media (min-width: 768px) {
+    .contentContainer {
+        min-width: 700px;
+        width: 900px;
+        height: 600px;
+        min-height: 600px;
+        border-radius: 20px;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 10px 10px 10px 50px;
+    }
+
+    .userForm {
+        padding: clamp(1px, 2px + 1.1vw, 12px);
+    }
+
+    ._header {
+        font-size: clamp(3.1rem, 0.5rem + 1.1vw, 3.8rem);
+    }
+
+    .DskBanner {
+        min-width: 300px;
+        width: 425px;
+        height: 555px;
+        min-height: 445px;
+        padding-left:  calc(15px + ((50vw - 768px) / 10));;
+    }
+}
+
+/* Mobile viewport */
 @media (max-width: 767px) {
     .contentContainer {
-        border-radius: 0 0 20px 20px;
+        border-radius: 20px;
     }
 }
