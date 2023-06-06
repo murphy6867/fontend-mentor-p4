@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-- Live Site URL: [Add live site URL here](https://newsletter-signup-form-with-success-m.netlify.app)
+- Live Site URL: [Link Live Site](https://newsletter-signup-form-with-success-m.netlify.app)
 
 ## My process
 My workflow is divided into 3 steps.
