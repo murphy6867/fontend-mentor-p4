@@ -93,7 +93,7 @@ input[type="email"] {
         width: 425px;
         height: 555px;
         min-height: 445px;
-        padding-left:  calc(15px + ((50vw - 768px) / 10));;
+        padding-left:  calc(15px + ((50vw - 768px) / 10));
     }
 }
 
